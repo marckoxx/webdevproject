@@ -28,7 +28,7 @@
         } else {
             //if all the fields are filled
             //insert data into the database
-            $result = mysqli_query($dbc, "INSERT INTO tblsubject(subject_code, subject_name) VALUES('$code','$name')");
+            $result = mysqli_query($dbc, "INSERT INTO tblsubjects(subject_code, subject_name) VALUES('$code','$name')");
             //display success message
             echo "<font color='green'>Data added successfully.</font>";
             echo '<br/> <a href="../index.php">View Result</a>';
