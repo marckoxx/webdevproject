@@ -15,7 +15,7 @@ if (isset($_POST['update'])) {
         }
     } else {
         //updating the table
-        mysqli_query($dbc, "UPDATE tblsubjects SET subject_code='$code', subject_name='$name' WHERE subject_id='$id'");
+        mysqli_query($dbc, "UPDATE tblsubjects SET Subject_Code='$code', Subject_Name='$name' WHERE Subject_ID='$id'");
         //redirecting to the display display page. In our case, it is index.php
         header("Location: ../index.php");
     }
